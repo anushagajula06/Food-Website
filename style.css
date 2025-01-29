@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#logo{
+    margin: -6px 6px;
+}
+#logo img {
+    height: 54px;
+    margin: 26px 26px;
+    background-color: transparent;
+}
+#navbar ul{
+    display: flex;
+    font-family: "Charis SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#navbar::before{
+    content: " ";
+background-color: black;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.4;
+}
+#navbar ul li{
+   list-style: none;
+   font-size: 1rem;
+   
+}
+#navbar ul li a{
+    display: block;
+    padding: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+    font-weight:bolder;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(238, 201, 201);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height:220px;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+background: url('../img/veg.jpg') no-repeat center center/cover;
+position: absolute;
+height: 332px;
+width: 100%;
+top: 0px;
+left: 0px;
+z-index: -1;
+opacity: 0.89;
+}
+.h-primary{
+    font-size: 1.9rem;
+    padding: 17px;
+    font-family: "Bree Serif", serif;
+}
+#home h1{
+    color: #322f30;
+    text-align: center;
+    font-family: "Bree Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+    padding-left: 570px;
+    margin-right: -172px;
+}
+#home p{
+    color: #322f30;
+    /* text-align: center; */
+    font-family: "Bree Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+    padding-left: 571px;
+    margin-right: -169px;
+   margin-bottom: 11px;
+}
+.btn{
+    padding: 6px;
+    border: 2px solid #3c3333;
+    background-color: #936f6f26;
+    color: black;
+    margin-left: 717px;
+    /* margin: 20px; */
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 7px;
+    cursor: pointer;
+    align-content: end;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #b6adad;
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.1rem;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+}
+#services{
+    display: flex;
+    margin: 20px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 23px;
+    border-radius: 17px;
+    margin: -21px 6px;
+    background: #f1ecec;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 106px;
+    width: 181px;
+    display: block;
+    margin: auto;
+    
+}
+#services .box p{
+    font-family: "Bree Serif", serif;
+}
+#client-section{
+height: 307px;
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    background: url('../img/veg.jpg');
+    height:  519px;
+    width: 100%;
+    z-index: -1;
+    filter: blur(5px);
+    }
+.clients{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.clients img{
+    height: 76px;
+    width: 67px;
+    background-color: transparent;
+}
+.clients-item{
+    padding: 28px;
+    margin: 6px 4px;
+}
+.clients-item img{
+    mix-blend-mode: multiply;
+    filter: brightness(8px);
+}
+#contact{
+    position: relative;
+    top: -111px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+}
+footer{
+    background: #a7a2a2;
+    color:black;
+    padding: 12px 8px;
+    margin-top: -101px;
+    
+}
+#contactbox{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 34px;
+
+}
+#contactbox input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+   font-size: 1.1rem;
+   border: 1px solid black;
+   mix-blend-mode:luminosity;
+}
+#contactbox form{
+    width: 30%;
+}
+#contactbox label{
+    font-size: 1.3rem;
+    font-family: "Bree Serif", serif;
+}
